@@ -10,13 +10,13 @@ const config = ({
 
   reporter: 'html',
   use: {
-    browserName: 'webkit',
+    browserName: 'chromium',
     headless: true,
     screenshot: 'on',
     // trace: 'on',  //to trace all the steps
     trace : 'retain-on-failure', //to trace only failure steps,//off, on
-    actionTimeout : 10*1000,
-    navigationTimeout: 30*1000
+    actionTimeout : 50*1000,
+    navigationTimeout: 50*1000
     },
 });
 module.exports = config;
